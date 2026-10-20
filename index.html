@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="kk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OSM · 2ГИС-ке ұқсас стиль</title>
+<meta name="description" content="OpenStreetMap деректері үшін 2ГИС стилистикасына ұқсас ашық MapLibre стилі: ашық және қара тақырып, POI иконкалары, такси қабаттары.">
+<link rel="stylesheet" href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css">
+<link rel="stylesheet" href="src/app.css">
+</head>
+<body>
+<div id="card" hidden>
+  <div><b style="color:#1fa91f">A</b><span id="aA"></span></div>
+  <div><b style="color:#e5322d">B</b><span id="aB"></span></div>
+  <div id="info"></div>
+  <button id="clear" type="button">Тазарту</button>
+</div>
+<form id="f" onsubmit="return false"><input id="q" placeholder="Іздеу: Астана, Абай даңғылы…" aria-label="Іздеу"><button>Іздеу</button></form>
+<select id="style" aria-label="Карта стилі"></select>
+<div id="map"></div>
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+<script src="src/style.js"></script>
+<script src="src/app.js"></script>
+</body>
+</html>
